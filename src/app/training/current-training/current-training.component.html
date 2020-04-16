@@ -1,0 +1,7 @@
+<section fxLayout="column" class="current-training" fxLayoutAlign="center center">
+    <mat-progress-spinner color="accent" mode="determinate" [value]="progress">
+    </mat-progress-spinner>
+    <h1>{{progress}}%</h1>
+    <p>Keep going on {{runningTraining.name}}, you can do it!</p>
+    <button mat-flat-button color="accent" (click)="onStop()">Stop</button>
+</section>
